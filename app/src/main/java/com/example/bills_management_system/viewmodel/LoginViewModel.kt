@@ -14,6 +14,7 @@ class LoginViewModel: ViewModel(){
     val regLiveData = MutableLiveData<RegisterResponse>()
     var errorLiveData = MutableLiveData<Throwable>()
 
+
     fun loginUser(loginRequest: LoginRequest) {
         viewModelScope.launch {
             val response = userRepo.registerUser(loginRequest)

@@ -18,7 +18,7 @@ class SignUp : AppCompatActivity() {
         super.onResume()
         setContentView(binding.root)
         binding.btnSignUP.setOnClickListener {
-            val intent = Intent(this, SignUp::class.java)
+            val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
         fun validateSignUp() {

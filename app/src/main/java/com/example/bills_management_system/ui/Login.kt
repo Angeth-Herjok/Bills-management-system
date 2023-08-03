@@ -4,12 +4,15 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.activity.viewModels
 import com.example.bills_management_system.R
 import com.example.bills_management_system.databinding.ActivityLoginBinding
 import com.example.bills_management_system.HomeActivity
+import com.example.bills_management_system.viewmodel.UserViewModel
 
 class Login : AppCompatActivity() {
     lateinit var binding: ActivityLoginBinding
+    val userViewModel:UserViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,17 +22,15 @@ class Login : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-//        setContentView(binding.root)
         binding.btnLogin.setOnClickListener {
             val intent=Intent(this, HomeActivity::class.java)
             startActivity(intent)
-
         }
-        validateRegistration()
+        validateLogin()
         clearErrors()
     }
 
-    fun validateRegistration() {
+    fun validateLogin() {
         val email = binding.etEmail.text.toString()
         val password = binding.etPassword.text.toString()
 
