@@ -1,6 +1,8 @@
 package com.example.bills_management_system.model
 
+import com.google.gson.annotations.Expose
+
 data class Users(
-    var email:String,
-    var password:String,
+    @Expose var email:String,
+    @Expose var password:String,
 )

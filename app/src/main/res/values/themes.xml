@@ -4,6 +4,6 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
-
+<!--     <item name="fontFamily" type="@font/my_font"-->
     <style name="Theme.Billsmanagementsystem" parent="Base.Theme.Billsmanagementsystem" />
 </resources>

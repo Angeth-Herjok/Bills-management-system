@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tvName" type="id" />
+    <item name="tvAmount" type="id" />
+    <item name="tvduedate" type="id" />
+    <item name="tvfrequency" type="id" />
+    <item name="tvBillId" type="id" />
+    <item name="tvuserId" type="id" />
+</resources>

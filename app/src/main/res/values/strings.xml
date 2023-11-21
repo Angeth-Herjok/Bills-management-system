@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Bills-management-system</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="summary" />
+    <string name="upcoming" />
+    <string name="paid" />
+    <string name="settings" />
+    <string name="name">Name</string>
+    <string name="amount">Amount</string>
+    <string name="due_date">Due Date</string>
+    <string name="frequency">Frequency</string>
+    <string name="billid">BillId</string>
+    <string name="userid">UserId</string>
+    <string-array name="frequencies">
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Quarterly</item>
+        <item>Annual</item>
+
+    </string-array>
+
 </resources>
